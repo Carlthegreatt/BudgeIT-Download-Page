@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "inter";
   src: url("./assets/fonts/Inter-VariableFont_opsz,wght.ttf");
@@ -10,7 +14,6 @@
 }
 .navbar {
   display: flex;
-
   width: 100%;
   color: #050505;
   display: flex-wrap;
@@ -39,8 +42,8 @@ ul li {
 }
 
 .container_2 {
-  height: 80vh;
   background: white;
+  margin-bottom: 100px;
 }
 .greet {
   display: flex;
@@ -53,11 +56,11 @@ ul li {
 
 .greet_title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .greet_subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .download-app {
@@ -81,4 +84,20 @@ ul li {
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
+}
+
+.login {
+  font-size: small;
+}
+
+.signup {
+  font-size: small;
+  background-color: blueviolet;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
 }
